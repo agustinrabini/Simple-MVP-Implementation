@@ -25,7 +25,7 @@ public class ProductsInteractor extends AppCompatActivity {
 
     public void remoteFetch(String filter, final  onDetailsFetched listener){
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://7ec7-2800-2141-5400-373-f57a-d763-af38-3f5f.ngrok.io")
+                .baseUrl("URL HERE")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
