@@ -23,7 +23,7 @@ public class ProductsInteractor extends AppCompatActivity {
 
     public void remoteFetch(String filter, final  onDetailsFetched listener){
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("URL HERE")
+                .baseUrl("{...}")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
