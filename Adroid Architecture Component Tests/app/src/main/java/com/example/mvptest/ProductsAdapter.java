@@ -24,7 +24,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<com.example.mvptest.Pr
     public ProductsAdapter(ProductsOnCustomClickListener listener) {
         this.listener = listener;
     }
-    //el activity que corresponde a cada layout de los item de la lista
+   
     @NotNull
     @Override
     public ProductsViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
