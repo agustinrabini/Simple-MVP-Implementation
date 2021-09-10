@@ -16,8 +16,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ProductsInteractor extends AppCompatActivity {
 
-    private DataInterfaceProd mListener;
-
     public interface onDetailsFetched{
         void onSucces(List<Product> productsFetchedData);
         void onFailure();
@@ -52,13 +50,5 @@ public class ProductsInteractor extends AppCompatActivity {
                 Toast.makeText(ProductsInteractor.this, "Error:" + t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
-    }
-
-    public void SetOnDataListenerProd(DataInterfaceProd listener){
-        mListener = listener;
-    }
-
-    public interface DataInterfaceProd {
-        void responseProd(List<Product> products);
     }
 }
