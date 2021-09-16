@@ -28,7 +28,6 @@ import java.util.List;
 
 public class TestFragment extends BaseFragment<ProductPresenterFragemnts> implements ProductsOnCustomClickListener, TestFragmentInterface {
 
-    public ProductsAdapter productsAdapter = new ProductsAdapter(this);
     public  RecyclerView rvProducts;
     public ProgressBar progressBar;
 
@@ -84,7 +83,7 @@ public class TestFragment extends BaseFragment<ProductPresenterFragemnts> implem
     }
 
     @Override
-    public void setProductsList(List<Product> products) {
+    public void setProductsList(List<Product> products, ProductsAdapter productsAdapter) {
         rvProducts.setLayoutManager(new GridLayoutManager(getContext(), 2));
         rvProducts.setAdapter(productsAdapter);
         rvProducts.setVisibility(View.VISIBLE);
